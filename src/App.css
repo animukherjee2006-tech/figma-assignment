@@ -1,0 +1,142 @@
+/*Body*/
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f111a;
+  color: white;
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+  }
+}
+
+/* Left SIDE */
+.left-panel {
+  background-color: #181b28;
+  padding: 20px;
+  border-radius: 16px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.left-panel h2 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.left-panel ol {
+  list-style: decimal inside;
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  padding-left: 0;
+}
+
+.left-panel li {
+  margin-bottom: 6px;
+}
+
+/* Right side */
+.right-panel {
+  background-color: #181b28;
+  padding: 20px;
+  border-radius: 16px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 12px;
+}
+
+.tab-button {
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: #25293c;
+  color: #9ca3af;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  color: white;
+}
+
+.tab-button.active {
+  background-color: white;
+  color: black;
+}
+
+/* Tab Content */
+.tab-content {
+  background-color: #25293c;
+  border-radius: 16px;
+  padding: 16px;
+  min-height: 160px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+.tab-content .highlight {
+  font-weight: 600;
+  color: white;
+}
+
+/* Gallery */
+.gallery {
+  background-color: #25293c;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.add-image {
+  background-color: #181b28;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-image:hover {
+  background-color: #2e3146;
+}
+
+/* Gallery Images */
+.gallery-images {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.gallery-images img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
